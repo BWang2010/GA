@@ -7,6 +7,8 @@ class Individual:
 
     def rand_genetics(self):
         num = len(self.target)
+        genetics = ""
         for x in range(num):
             randomLetter = random.choice(string.ascii_lowercase)
-            print(randomLetter)
+            genetics = genetics + randomLetter
+        return genetics
